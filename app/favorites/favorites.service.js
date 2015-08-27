@@ -8,7 +8,7 @@
 
     var addFavorite = function (place) {
       $http.post(url, place).success(function (resp) {
-        $rootScope.$broadcast('favortie:added')
+        $rootScope.$broadcast('favorite:added')
       }).error(function (err) {
         console.log(err);
       });
